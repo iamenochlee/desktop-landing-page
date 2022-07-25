@@ -3,11 +3,9 @@
 * {
     color: inherit;
     margin: 0;
+    font-family: "Inter", "Roboto";
   }
   
-  body {
-    font-family: Poppins;
-  }
   
   ul {
     padding: 0;
@@ -25,4 +23,160 @@
   
   img {
     max-width: 100%;
-  } 
+  }
+
+  span{
+    color: red;
+  }
+
+  .navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary;
+    height: 116px;
+
+    .nav-logo{
+      font-size: 60px;
+      color: white;
+      font-weight: 500;
+      padding-left: 67.5px;
+    }
+
+    .nav-links{
+      display: flex;
+      align-items: center;
+
+      .nav-links-btn{
+        margin-left: 141.5px;
+        margin-right: 100px;
+        width: 190px;
+        height: 49px;
+        background: #ED1C1C;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+
+      }
+
+      ul{
+        list-style-type: none;
+        display: flex;
+
+
+        li{
+          padding-left: 52px;
+          color: white;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .container{
+    width: auto;
+    margin-left:100px;
+    margin-right:100px;
+
+    #home{
+      display: flex;
+      height: 700px;
+      justify-content: space-between;
+
+      .home-text{
+        padding-top: 120px;
+        font-family: "Roboto";
+
+        h3{
+          font-size: 30px;
+          font-weight: 500;
+        }
+
+        h1{
+          font-size: 50px;
+          line-height: 59px;
+          padding-top: 10px;
+          font-weight: 600;
+        }
+
+        .p1{
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 42px;
+        }
+
+        .p2{
+          font-size: 16px;
+          line-height: 24px;
+          padding-top: 30px;
+          width: 622px;
+          padding-right: 113px;
+        }
+
+        .home-text-links-btn{
+          width: 135px;
+          height: 49px;
+          background: #ED1C1C;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          margin-top: 50px;
+          margin-bottom: 59px;
+        }
+
+        .home-social-media{
+          display: flex;
+          align-items: center;
+
+          h3{
+            font-size:28px; 
+            margin-right: 38px;
+          }
+          img{
+            width: 24px;
+            height: 24px;
+            margin-right: 20px;
+            cursor: pointer;
+          }
+        }
+
+        .home-profile-pic{
+          position: relative;
+
+          img{
+            width: 610px;
+            height: 348px;
+            position: relative;
+
+            
+
+            
+          }
+          
+
+          
+        }
+      }
+
+    }
+  }
+
+  .pic-1{
+    position: absolute;
+    top: 236px;
+    right: 98px;
+  }
+
+  .pic-2{
+    position: absolute;
+    top: 346px;
+    right: 200px;
+  }
+
+  .pic-3{
+    position: absolute;
+    top: 266px;
+    right: 147px;
+  }
