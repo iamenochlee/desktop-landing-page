@@ -4,6 +4,7 @@
     color: inherit;
     margin: 0;
     font-family: "Inter", "Roboto";
+    scroll-behavior: smooth;
   }
   
   
@@ -14,8 +15,12 @@
   
   a {
     text-decoration: none;
+    transition: 0.3s;
   }
   
+  a:hover{
+    color: red;
+  }
   hr {
     border: 0;
     border-top: 1px dotted #efefef;
@@ -27,6 +32,7 @@
 
   span{
     color: red;
+    font-size: 16px;
   }
 
   .navbar{
@@ -274,12 +280,12 @@
       display: grid;
       place-items: center;
       grid-template-columns: 50% 50%;
-      gap: 1.5em;
+      gap: 1.2em;
       margin-top: 30px;
       
 
       img{
-      width: 670px;
+      width: 800px;
       height: 348px;
       }
     }
@@ -295,11 +301,189 @@
   #portfolio button{
     width: 188px;
     height: 59px;
-    margin-left: 43%;
+    margin-left: 700px;
     margin-top: 64px;
     color: red;
     font-size: 1rem;
     font-weight: 600;
     border: #ED1C1C solid 1px;
     box-shadow: 1px 0.5px 1px 0.5px rgba($color: #ED1C1C, $alpha: 0.5);
+
+    &:hover{
+      color: blue;
+    }
   }
+
+
+
+
+  #Testimonial div p{
+    max-height: 15px;
+    font-size: 14px;
+    
+  }
+
+  #Testimonial div img{
+    margin-left: 270px;
+  }
+
+  #Testimonial div h3{
+    margin-top: -1px;
+    margin-left: 230px;
+  }
+
+  #Testimonial .hi{
+    font-weight: 700;
+    margin-top: 30px;
+  }
+
+  .top-client-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 30px;
+
+    h3{
+      font-weight: 700;
+    }
+
+    div{
+      width: 330px;
+      height: 100px;
+      border-radius: 5px;
+      background-color: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p{
+        align-items: center;
+        font-size: 40px;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+
+  #contact {
+    margin-top: 120px;
+    margin-left: -20px;
+
+    h3{
+      font-size: 32px;
+      margin-top: 6px;
+    }
+
+    .contact-row{
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 35px;
+
+      .col{
+        display: grid;
+        place-items: center;
+        align-items: center;
+
+        h3{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+
+ .message{
+    margin-top: 120px;
+
+    #texty{
+      font-size: 32px;
+      font-weight: 500;
+      padding-bottom: 50px;
+      
+    }
+
+    .message-form{
+      width: 100%px;
+      margin: 0 auto;
+      background-color: $primary;
+      height: 950px;
+      padding-left: 190px;
+      padding-right: 190px;
+      padding-top: 25px;
+      padding-bottom: 52px;
+      margin-bottom: 120px;
+
+      .name{
+        width: 960px;
+        height: 80px;
+        padding: 20px;
+        outline: none;
+      }
+
+      .email{
+        width: 960px;
+        height: 80px;
+        padding: 10px;
+        outline: none;
+      }
+
+      .phone{
+        width: 960px;
+        height: 80px;
+        padding: 10px;
+        outline: none;
+      }
+
+      #text{
+        width: 960px;
+        height: 270px;
+        padding: 10px;
+        outline: none;
+      }
+    }
+  }
+
+form h3{
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin-top: 37px;
+}
+
+
+.form-text-links-btn{
+      margin-top: 20px;
+      align-items: center;
+        margin-left: 375px;
+        width: 190px;
+        height: 49px;
+        background: #ED1C1C;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+}
+
+
+
+
+.footer{
+  
+  height: 285px;
+  background-color: $primary;
+  text-align: center;
+  color: white;
+  padding-top: 87px;
+
+  h1{
+    font-size: 60px;
+    
+  }
+
+  h2{
+    font-size: 16px;
+    margin-top: 80px;
+  }
+}
+
+
